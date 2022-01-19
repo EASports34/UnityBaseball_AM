@@ -17,7 +17,7 @@ public class BottleCollision : MonoBehaviour
         {
             Debug.DrawRay(contact.point, contact.normal, Color.white);
         }
-        if (collision.relativeVelocity.magnitude > 2)
+        if (collision.relativeVelocity.magnitude > 1)
             audioSource.Play();
     }
 
